@@ -26,69 +26,75 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <body>
+  <body>
       <div class="pagecontainer">
         <header>
           <h1>BibleBotAI</h1>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Images</a></li>
-              <li><a href="#">Sermons</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Pray For Me</a></li>
-              <li><a href="#">Donate</a></li>
-            </ul>
-            <form>
-              <input type="search" placeholder="Search">
-              <button type="submit">Submit</button>
-            </form>
-          </nav>
-        </header>
+          <div class="nav-container">
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Pray For Me</a></li>
+                <li><a href="#">Donate</a></li>
+              </ul>
+              <form>
+                <input type="search" placeholder="Search">
+                <button type="submit">Submit</button>
+              </form>
+            </nav>
+          </div>
+          </header>
         <main>
           <p class="fixed"><a href="#">Donate Now so we can stay online! (Please)</a></p>
           <section id="imageoftheweek" class="clearfix">
             <h2>Image of the Week</h2>
-              <a href="https://commons.wikimedia.org/wiki/File:%C3%9Altima_Cena_-_Da_Vinci_5.jpg#/media/File:Última_Cena_-_Da_Vinci_5.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/1200px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg" alt="Última Cena - Da Vinci 5.jpg" width="600" height="400"></a>
+            <div class="image-text-wrapper">
+              <a href="https://commons.wikimedia.org/wiki/File:%C3%9Altima_Cena_-_Da_Vinci_5.jpg#/media/File:Última_Cena_-_Da_Vinci_5.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/1200px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg" alt="Última Cena - Da Vinci 5.jpg" width="600" height="400"/></a>
                 <p>A Reference to Matthew 26, Mark 14, Luke 22, and Corinthians 11, In Leonardo da Vinci's masterpiece "The Last Supper," the scene captures the moment during the final meal Jesus shared with his disciples before his crucifixion. The painting portrays Jesus announcing that one of them will betray him. The image powerfully conveys the emotional turmoil and reactions of the disciples as they question who among them will be the betrayer. Each disciple is depicted with a distinct expression and body language, reflecting their individual personalities and responses to the shocking news. The artwork's composition, with Jesus at the center, highlights the significance of his presence and the dramatic intensity of the scene.</p>
-          </section>          
-          <section id="tools1">
-            <h2><span> Check out historical sermons based on your preferred verse </span></h2>
-            <a href="https://jordanmarkstone.com/wp-content/uploads/2017/09/Sermons.jpg"><img src="https://jordanmarkstone.com/wp-content/uploads/2017/09/Sermons.jpg" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200">
+            </div>
+          </section>
+        <div class="tools-container">          
+          <section id="tools1" class="tool-section">
+            <h3><span> Search for historical sermons: </span></h3>
+            <a href="https://jordanmarkstone.com/wp-content/uploads/2017/09/Sermons.jpg"><img src="https://jordanmarkstone.com/wp-content/uploads/2017/09/Sermons.jpg" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200"/>
             </a>
           </section>
-          <section id="tools2">
-            <h2><span> Curious about the history of this verse? Read more here: </span></h2>
-            <a href="https://www.mooc.org/hubfs/history.jpg"><img src="https://www.mooc.org/hubfs/history.jpg" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200">
+          <section id="tools2" class="tool-section">
+            <h3><span> Curious about the history of this verse? </span></h3>
+            <a href="https://www.mooc.org/hubfs/history.jpg"><img src="https://www.mooc.org/hubfs/history.jpg" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200"/>
             </a>
           </section>
-          <section id="tools3">
-            <h2><span> Want to know more about a specific verse? </span></h2>
-            <a href="https://biblehub.com/interlinear/homeicon.gif"><img src="https://biblehub.com/interlinear/homeicon.gif" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200">
+          <section id="tools3" class="tool-section">
+            <h3><span> Want to know more? </span></h3>
+            <a href="https://biblehub.com/interlinear/homeicon.gif"><img src="https://biblehub.com/interlinear/homeicon.gif" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200"/>
             </a>
           </section>
+        </div>
           <section id="canweprayforyou">
             <h2><span> How can we pray for you? </span></h2>
-            <a href="https://i.swncdn.com/media/800w/via/18050-gettyimages-1194042218.webp"><img src="https://i.swncdn.com/media/800w/via/18050-gettyimages-1194042218.webp" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200">
+            <a href="https://i.swncdn.com/media/800w/via/18050-gettyimages-1194042218.webp"><img src="https://i.swncdn.com/media/800w/via/18050-gettyimages-1194042218.webp" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200"/>
             </a>
           </section>
           <section id="q&a">
             <h2><span> Have questions? We have answers </span></h2>
-            <a href="https://www.throughlinegroup.com/wp-content/uploads/2019/03/iStock-993313330-1024x683.jpg"><img src="https://www.throughlinegroup.com/wp-content/uploads/2019/03/iStock-993313330-1024x683.jpg" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200">
+            <a href="https://www.throughlinegroup.com/wp-content/uploads/2019/03/iStock-993313330-1024x683.jpg"><img src="https://www.throughlinegroup.com/wp-content/uploads/2019/03/iStock-993313330-1024x683.jpg" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200"/>
             </a>
           </section>
           <section id="bringbackorthodoxy">
             <h2><span> Looking for more resources? Check out these guys! </span></h2>
-            <a href="https://cdn.britannica.com/59/144259-050-A2676BDC/Jesus-Christ-detail-mosaic-Deesis-Hagia-Sophia.jpg?w=400&h=300&c=crop"><img src="https://cdn.britannica.com/59/144259-050-A2676BDC/Jesus-Christ-detail-mosaic-Deesis-Hagia-Sophia.jpg?w=400&h=300&c=crop" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200">
+            <a href="https://cdn.britannica.com/59/144259-050-A2676BDC/Jesus-Christ-detail-mosaic-Deesis-Hagia-Sophia.jpg?w=400&h=300&c=crop"><img src="https://cdn.britannica.com/59/144259-050-A2676BDC/Jesus-Christ-detail-mosaic-Deesis-Hagia-Sophia.jpg?w=400&h=300&c=crop" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200"/>
             </a>
           </section>
           <section id="ourmission">
             <h2><span> Our Mission </span></h2>
-            <a href="https://fieldedge.com/wp-content/uploads/2021/08/businessman-hand-holding-blocks.jpeg"><img src="https://fieldedge.com/wp-content/uploads/2021/08/businessman-hand-holding-blocks.jpeg" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200">
+            <a href="https://fieldedge.com/wp-content/uploads/2021/08/businessman-hand-holding-blocks.jpeg"><img src="https://fieldedge.com/wp-content/uploads/2021/08/businessman-hand-holding-blocks.jpeg" alt="If you're seeing this, our images arent working! We are working on this as we speak!" width="300" height="200"/>
             </a>
           </section>
           
         </main>
       </div>
-    </body>
+  </body>
 </html>

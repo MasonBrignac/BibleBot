@@ -9,10 +9,18 @@ body {
   background-color: #f3ece9;
   color: #574727;
 }
-header >h1{
-    text-align: center;
-    font-size: 75px;
-  }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > h1 {
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: 1em;
+}
 
 .fixed {
   position: fixed;
@@ -36,3 +44,63 @@ header >h1{
   clear: both;
 }
 
+@media (max-width: 767px) {
+  #imageoftheweek img {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.tools-container {
+  display: flex;
+  justify-content: space-between; /* Optional: Distribute the available space evenly between the sections */
+}
+
+.toolsection {
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+}
+
+*textdecorations*
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+*navigation menu*
+
+nav {
+  background-color: #574727;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+nav a {
+  color: #f0510d;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
