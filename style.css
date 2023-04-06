@@ -1,16 +1,17 @@
-body{
-    background-color: #f3ece9;
-    color: #574727;
-  }
+.pagecontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   
+  }
+
+body {
+  background-color: #f3ece9;
+  color: #574727;
+}
 header >h1{
     text-align: center;
     font-size: 75px;
-  }
-
-main {
-  max-width: 600px;
-  margin: 0 auto; 
   }
 
 .fixed {
@@ -20,3 +21,18 @@ main {
   width: 200px;
   background-color: #f3ece9;
   }
+
+.image-container {
+  display: flex;
+}
+
+#imageoftheweek img {
+  float: left;
+  margin-right: 20px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
